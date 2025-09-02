@@ -8,6 +8,7 @@ Mudah untuk digunakan, hanya perlu memodifikasi list commands dan juga list host
 requirement :
 
 redhat can accessed ssh using local credential
+
 [vagrant@JKT-Redhat-04 ~]$ sudo cat /etc/ssh/sshd_config | grep Password
 PasswordAuthentication yes (uncomment)
 #PermitEmptyPasswords no
