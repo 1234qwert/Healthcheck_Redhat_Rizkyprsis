@@ -6,16 +6,18 @@ Mudah untuk digunakan, hanya perlu memodifikasi list commands dan juga list host
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d36d3b8d-162a-4f32-97a5-d09b42ccec31" />
 
 requirement :
+
 redhat can accessed ssh using local credential
 [vagrant@JKT-Redhat-04 ~]$ sudo cat /etc/ssh/sshd_config | grep Password
 PasswordAuthentication yes (uncomment)
 #PermitEmptyPasswords no
 PasswordAuthentication no
-=============================================
+
 add user as sudoers
+
 [vagrant@JKT-Redhat-04 ~]$ sudo cat /etc/sudoers.d/monitor
 monitor ALL=(ALL) NOPASSWD: ALL
-=============================================
+
 Script ini bebas digunakan untuk siapapun
 inventory_report adalah file excel yang ter-generate otomatis
 file .txt didalam folder log adalah file collect data cli pada linux
