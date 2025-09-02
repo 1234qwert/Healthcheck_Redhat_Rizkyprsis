@@ -16,8 +16,12 @@ PasswordAuthentication no
 
 add user as sudoers
 
-[vagrant@JKT-Redhat-04 ~]$ sudo cat /etc/sudoers.d/monitor
-monitor ALL=(ALL) NOPASSWD: ALL
+example : 
+[automation@SBY-Redhat-03 ~]$ echo "automation ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/auto
+mation
+
+[automation@SBY-Redhat-03 ~]$ sudo cat /etc/sudoers.d/automation
+automation ALL=(ALL) NOPASSWD: ALL
 
 Script ini bebas digunakan untuk siapapun
 inventory_report adalah file excel yang ter-generate otomatis
