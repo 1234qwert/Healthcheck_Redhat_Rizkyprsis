@@ -1,0 +1,18 @@
+hostnamectl
+cat /etc/redhat-release
+lscpu
+cat /proc/cpuinfo
+cat /proc/meminfo
+free -lh
+df -lh
+uptime
+top -b -n 1
+sudo cat /var/log/messages | grep fatal
+sudo cat /var/log/messages | grep failed
+sudo cat /var/log/secure | grep failed
+sudo cat /var/log/messages | grep error
+sudo cat /var/log/messages | grep critical
+sudo cat /var/log/messages | grep denied
+sudo cat /var/log/messages | grep systemd | grep failed
+sudo cat /var/log/messages
+
